@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pokédex</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Mi Pokédex</h1>
+
+<main>
+
+    <section id="buscador">
+        <h2>Buscar Pokémon</h2>
+
+        <input
+                type="text"
+                id="pokemonName"
+                placeholder="Escribe el nombre o ID"
+        >
+
+        <button id="searchButton">
+            Buscar
+        </button>
+
+        <button id="randomButton">
+            Pokémon aleatorio
+        </button>
+    </section>
+
+    <section id="pokemonCard">
+        <h2>Información del Pokémon</h2>
+
+        <div id="pokemonInfo">
+            <p>Busca un Pokémon para mostrar su información.</p>
+        </div>
+
+        <button id="detailsButton" disabled>
+            Más información
+        </button>
+
+        <button id="addButton" disabled>
+            Agregar a mi colección
+        </button>
+    </section>
+
+    <section id="collection">
+        <h2>Mi colección</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+            </tr>
+            </thead>
+
+            <tbody id="collectionBody">
+            </tbody>
+        </table>
+
+        <p id="collectionCount">Pokémon agregados: 0/6</p>
+    </section>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
